@@ -1,0 +1,37 @@
+.header{
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__navbar{
+    /* kéo header ra cả phần đầu html */
+    display: flex;
+    /* tạo khoảng giữa 2 thẻ */
+    justify-content: space-between;
+}
+.header__navbar-list{
+    /* bỏ dấu tròn trước thẻ li */
+    list-style: none;
+    
+    padding-left: 0;
+}
+
+.header__navbar-item{
+    margin: 0 10px;  
+}
+/* Cách viết gộp nhìu class */
+.header__navbar-item,
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.4rem;
+    /* gọi biến setup màu đã đặt trong base */
+    color: var(--white-color);
+    /* xóa dấu gạch chân phía dưới link */
+    text-decoration: none;
+    /* chỉnh độ dày cho chữ */
+    font-weight: 300;
+}
+
+.header__navbar-item--bold{
+    font-weight: 500;
+}
